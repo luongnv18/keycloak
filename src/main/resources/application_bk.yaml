@@ -1,0 +1,18 @@
+
+server:
+  port: 8081
+
+keycloak:
+  auth-server-url: http://localhost:8080/auth
+  realm: Demo-Realm
+  resource: springboot-microservice
+  credentials:
+    secret: 56399741-60ed-4a86-81a7-13f7d6f138fd
+  bearer-only: true
+  public-client: true
+
+  
+
+logging:
+  level:
+    org.keycloak: TRACE
